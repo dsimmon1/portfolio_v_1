@@ -29,7 +29,7 @@ nav ul li {
 	border-bottom: solid 2px black;
 	background-image: url(../images/rose-687625_1280.jpg);
 	background-size: 900px auto;
-	color: lightblue;
+	color: white;
 	height: 400px;
 	text-align: center;
 	padding-top: 90px;
@@ -40,7 +40,7 @@ nav ul li {
 }
 
 #text {
-	margin-left: 280px;
+	margin-left: 370px;
 	width: 500px;
 	border-bottom: solid 1px;
 }
