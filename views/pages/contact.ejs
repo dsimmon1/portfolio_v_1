@@ -1,0 +1,43 @@
+ <% include ../partials/head %>
+<% include ../partials/header %>
+
+<body>
+ <div id="contactPage" class="container">
+    	<div id="contact">
+    		<br>
+    	 <h1 id="biography1">Contact Me</h1>
+    	 <hr>
+    	 <p>I'm available for freelance as well as full time work.</p>
+    	</div>
+        <hr>
+        <div class="row">
+        	<div id="contactSection" class="col-md-3">
+        		<img src="/images/IMG_51501.jpg">
+        	</div>
+            <div id="section" class="col-md-9">
+                <form role="form">
+                    <div class="form-group">
+                    	<h2 id="title">NAME</h2>
+                        <input id="person" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                    	<h2 id="title">EMAIL</h2>
+                        <input id="email" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <h2 id="title">PHONE</h2>
+                        <input id="person" type="text" class="form-control" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                    	<h2 id="title">MESSAGE</h2>
+                        <textarea class="form-control" type="textarea" id="message" maxlength="140" rows="7" required></textarea>
+                    </div>
+                    <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <% include ../partials/footer %>
