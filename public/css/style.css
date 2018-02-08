@@ -1,15 +1,25 @@
 body {
-	background-color: darkgrey;
+	background-color: rgba(212,170,160, .45);
 }
 
 a {
 	color: lightyellow;
 }
 
+h1 {
+	color: white;
+}
+
 nav {
 	border-bottom: solid 2px;
-	height: 70px;
 	font-family: 'Spectral SC', serif;
+	-moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
 }
 
 nav ul li:first-child { float: left; }
@@ -27,8 +37,6 @@ nav ul li {
 }
 
 #main {
-	border-bottom: solid 2px black;
-	background-image: url(../images/rose-687625_1280.jpg);
 	background-size: 100%;
 	color: white;
 	height: 400px;
@@ -36,30 +44,208 @@ nav ul li {
 	padding-top: 90px;
 	font-size: 35px;
 	font-family: 'Spectral SC', serif, extra-light;
-	clear: left;
 
 }
 
 #text {
-	margin-left: 370px;
-	width: 500px;
 	border-bottom: solid 1px;
+	padding: 10px;
+	color: white;
+	/*background-color: rgba(0, 0, 0, 0.75);*/
+	padding-bottom: 20px;
 }
 #info {
 	font-family: 'Spectral SC', serif;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 5px;
 }
 
 .aboutme {
-	position: absolute;
-  bottom: 0;
   font-family: 'Spectral SC', serif;
+  text-align: center;
 }
 
 #me {
-	color: darkorange;
+	color: rgb(198,158,149);
 }
 
 #name {
 	font-family: 'Dancing Script', cursive;
 	font-size: 50px;
+}
+
+#contactimg {
+	border-radius: 50%;
+}
+
+#number {
+	text-align: center;
+	margin: 5px;
+	background: white;
+	border: 1px solid black;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+#submit {
+	font-family: 'Spectral SC', serif;
+	background-color: black;
+	border: 2px solid rgb(212,170,160);
+	color: lightyellow;
+	font-size: 20px;
+	text-align: center;
+}
+
+#footer {
+	text-align: center;
+}
+
+#portpic {
+	margin-bottom: 30px;
+}
+
+#portpic:hover {
+	opacity: 0.7;
+
+}
+
+.bio {
+	text-align: center;
+}
+
+.pic {
+	text-align: center;
+}
+
+#picshadow {
+	-moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
+}
+
+#contact {
+	text-align: center;
+	font-family: 'Spectral SC', serif;
+}
+
+.skills {
+  font-family: 'Spectral SC', serif;
+  padding: 8px;
+}
+
+.resume {
+	clear: both;
+}
+
+#circle-shape-example { 
+	background-color: rgba(255,255,255, .75);
+  margin: 2rem; 
+}
+#circle-shape-example p { 
+  line-height: 1.8; 
+}
+
+.curve { 
+	font-family: 'Spectral SC', serif; 
+	text-align: right;
+	font-size: 20px;
+	font-weight: bold;
+  float: left;
+  padding-bottom: 12rem;
+  margin-top: 1rem;
+  margin-right:8rem; 
+  border-radius: 90%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+.projects1 {
+	font-family: 'Spectral SC', serif; 
+	margin-bottom: 50px;
+
+}
+
+.projects {
+	text-align: center;
+	margin: 20px;
+}
+
+.resume {
+	text-align: center;
+	font-family: 'Spectral SC', serif; 
+
+}
+
+#contactSection {
+	text-align: center;
+}
+
+/*@media only screen and (max-width: 1034px){
+
+.skills {
+	text-align: right;
+}
+
+.curve {
+	margin-top: 40px;
+font-size: 3vw;
+text-align: left;
+}
+
+}*/
+
+@media only screen and (max-width: 768px){
+
+.curve {
+	 border-radius: none;
+  -webkit-shape-outside: none;
+  shape-outside: none;
+  border-bottom: 30px solid black;
+	float: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	-moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
+}
+
+.skills{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+}
+
+
+
+
+#about {
+	color: black;
 }

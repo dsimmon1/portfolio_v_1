@@ -1,43 +1,57 @@
  <% include ../partials/head %>
-<% include ../partials/header %>
+<% include ../partials/header2 %>
 
 <body>
+    <br><br>
  <div id="contactPage" class="container">
     	<div id="contact">
-    		<br>
-    	 <h1 id="biography1">Contact Me</h1>
-    	 <hr>
-    	 <p>I'm available for freelance as well as full time work.</p>
+    	   <h2>Let's Create Something Great!</h2>
+            <p>If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.</p>
     	</div>
+
         <hr>
+
         <div class="row">
         	<div id="contactSection" class="col-md-3">
-        		<img src="/images/IMG_51501.jpg">
+        		<img id="contactimg" src="/images/IMG_4038.jpeg" height="200" width=auto>
+                <h6 id="number">(202)-379-5741</h6>
+                
+                <div id="socialContact">
+                    <a href="https://www.linkedin.com/in/dianna-simmons-41a49b6b/">
+                <img src="/images/if_11-linkedin_104493.png" height="25" width="25"></a>
+                <a href="https://github.com/dsimmon1"><img src="/images/if_github2_252065.png" height="25" width="25"></a>
+                <a href="https://stackexchange.com/users/11344894/diana-simmons">
+                <img src="/images/if_stackoverflow-square-social-media_764872.png" height="25" width="25"></a>
+                    <br><br>
+                </div>
+
         	</div>
             <div id="section" class="col-md-9">
                 <form role="form">
-                    <div class="form-group">
-                    	<h2 id="title">NAME</h2>
-                        <input id="person" type="text" class="form-control" required>
+                     <div class="form-row">
+                     <div class="form-group col-md-4">
+                    	
+                        <input id="person" type="text" class="form-control" placeholder="Name" required>
                     </div>
-                    <div class="form-group">
-                    	<h2 id="title">EMAIL</h2>
-                        <input id="email" type="text" class="form-control" required>
+                     <div class="form-group col-md-4">
+                    	
+                        <input id="email" type="text" class="form-control" placeholder="Email" required>
                     </div>
-                    <div class="form-group">
-                        <h2 id="title">PHONE</h2>
-                        <input id="person" type="text" class="form-control" required>
+                     <div class="form-group col-md-4">
+                        
+                        <input id="person" type="text" class="form-control" placeholder="Phone" required>
                     </div>
+                </div>
                     <br>
                     <div class="form-group">
-                    	<h2 id="title">MESSAGE</h2>
-                        <textarea class="form-control" type="textarea" id="message" maxlength="140" rows="7" required></textarea>
+                    	
+                        <textarea class="form-control" type="textarea" id="message" maxlength="140" rows="7" placeholder="Enter a message" required></textarea>
                     </div>
-                    <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                    <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Send</button>
                 </form>
             </div>
         </div>
     </div>
-    <br>
+    <br><br><br><br>
 
     <% include ../partials/footer %>
