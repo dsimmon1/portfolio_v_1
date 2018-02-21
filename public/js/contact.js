@@ -39,28 +39,17 @@ $('#submit').on("click", function() {
 
 // Get the modal
 var modal = document.getElementById('myModal1');
-var modal2 = document.getElementById('myModal2');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var modalImg1 = document.getElementById("img01");
-var modalImg2 = document.getElementById("img02");
 var captionText1 = document.getElementById("caption1");
-var captionText2 = document.getElementById("caption2");
 
-$("#acting").on("click", function () {
+$("#developer").on("click", function () {
 	console.log("click");
     modal.style.display = "block";
     modalImg1.src = this.src;
     captionText1.innerHTML = this.alt;
 });
-
-$("#journalism").on("click", function () {
-	console.log("click");
-    modal2.style.display = "block";
-    modalImg2.src = this.src;
-    captionText2.innerHTML = this.alt;
-});
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("exit")[0];
