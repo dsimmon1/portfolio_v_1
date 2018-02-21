@@ -5,11 +5,14 @@ $('#submit').on("click", function() {
 
 	var name = $("#person").val().trim();
 	var email = $("#email").val().trim();
+  var phone = $("#phone").val().trim();
 	var message = $("#message").val().trim();
+
 
 	var newContact = {
 		name: name,
 		email: email,
+    phone: phone,
 		message: message
 	}
 
@@ -17,6 +20,7 @@ $('#submit').on("click", function() {
 
 	$("#person").val('');
 	$("#email").val('');
+  $("#phone").val('');
 	$("#message").val('');
 
 
