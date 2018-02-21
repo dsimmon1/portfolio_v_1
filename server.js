@@ -59,7 +59,7 @@ app.post("/contact", function(req, res) {
     let mailOptions = {
         from: '"Diana Simmons" <simmons.diana93@gmail.com>', // sender address
         // to: 'iamariellesimonee@gmail.com',
-        // to: 'simmons.diana93@gmail.com',
+        to: 'simmons.diana93@gmail.com',
         subject: 'New Contact from Website', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
