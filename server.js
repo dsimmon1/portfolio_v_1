@@ -7,7 +7,7 @@ const path = require('path');
 
 const app = express();
 
-let PORT = process.env.PORT || 8080;
+let PORT = process.env.PORT || 2020;
 
 
 app.set('views', __dirname + '/views');
