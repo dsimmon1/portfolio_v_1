@@ -1,226 +1,238 @@
 body {
-	background-color: rgba(212,170,160, .45);
+    background-color: rgba(212, 170, 160, .45);
 }
 
 a {
-	color: lightyellow;
+    color: lightyellow;
 }
 
 h1 {
-	color: white;
+    color: white;
 }
 
 nav {
-	border-bottom: solid 2px;
-	font-family: 'Spectral SC', serif;
-	-moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    border-bottom: solid 2px;
+    font-family: 'Spectral SC', serif;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 
-	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-	zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=true, ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
 }
 
-nav ul li:first-child { float: left; }
+nav ul li:first-child {
+    float: left;
+}
 
-nav ul li { 
-  list-style:none;
-  margin:10px;
-  float: right; 
+nav ul li {
+    list-style: none;
+    margin: 10px;
+    float: right;
 }
 
 #firstname {
-	font-family: 'Dancing Script', cursive;
-	font-size: 30px;
-	padding-bottom: -50px; 
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    padding-bottom: -50px;
 }
 
 #main {
-	background-size: 100%;
-	color: white;
-	height: 400px;
-	text-align: center;
-	padding-top: 90px;
-	font-size: 35px;
-	font-family: 'Spectral SC', serif, extra-light;
- 	animation-duration: 2s;
+    background-size: 100%;
+    color: white;
+    height: 400px;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 35px;
+    font-family: 'Spectral SC', serif, extra-light;
+    animation-duration: 2s;
     animation-name: slidein;
 }
 
-    @keyframes slidein {
-            from {
-                margin-left: -300%;
-                width: 100%;
-            }
+@keyframes slidein {
+    from {
+        margin-left: -300%;
+        width: 100%;
+    }
 
-            to {
-                margin-right: 0%;
-                width: 300%;
-            }
-        }
-#text {
-	border-bottom: solid 1px;
-	padding: 10px;
-	color: white;
-	/*background-color: rgba(0, 0, 0, 0.75);*/
-	padding-bottom: 20px;
+    to {
+        margin-right: 0%;
+        width: 300%;
+    }
 }
-#info {
-	font-family: 'Spectral SC', serif;
-	background-color: rgba(255, 255, 255, 0.75);
-	padding: 5px;
-	animation:fadeIn ease-in 1s;
+
+#text {
+    border-bottom: solid 1px;
+    padding: 10px;
+    color: white;
+    /*background-color: rgba(0, 0, 0, 0.75);*/
+    padding-bottom: 20px;
+}
+
+.info {
+    font-family: 'Spectral SC', serif;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    animation: fadeIn ease-in 1s;
+
 }
 
 .aboutme {
-  font-family: 'Spectral SC', serif;
-  text-align: center;
+    font-family: 'Spectral SC', serif;
+    text-align: center;
 }
 
 #me {
-	color: rgb(198,158,149);
+    color: rgb(198, 158, 149);
 }
 
 #name {
-	font-family: 'Dancing Script', cursive;
-	font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
 }
 
 #contactimg {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
-#number {
-	text-align: center;
-	margin: 5px;
-	background: white;
-	border: 1px solid black;
-}
-
-.row > .column {
-  padding: 0 8px;
+.row>.column {
+    padding: 0 8px;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .column {
-  float: left;
-  width: 25%;
+    float: left;
+    width: 25%;
 }
 
 #submit {
-	font-family: 'Spectral SC', serif;
-	background-color: black;
-	border: 2px solid rgb(212,170,160);
-	color: lightyellow;
-	font-size: 20px;
-	text-align: center;
+    font-family: 'Spectral SC', serif;
+    background-color: black;
+    border: 2px solid rgb(212, 170, 160);
+    color: lightyellow;
+    font-size: 20px;
+    text-align: center;
 }
 
 #footer {
-	text-align: center;
+    text-align: center;
 }
 
 #portpic {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #portpic:hover {
-	opacity: 0.7;
-
+    opacity: 0.7;
 }
 
 .bio {
-	text-align: center;
+    text-align: center;
 }
 
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .pic {
-	text-align: center;
+    text-align: center;
 }
 
 #picshadow {
-	-moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
-	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 
-	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-	zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=true, ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
 }
 
 #contact {
-	text-align: center;
-	font-family: 'Spectral SC', serif;
+    text-align: center;
+    font-family: 'Spectral SC', serif;
 }
 
 .skills {
-  font-family: 'Spectral SC', serif;
-  padding: 8px;
+    font-family: 'Spectral SC', serif;
+    padding: 8px 0 0 40px;
+    text-align: right;
 }
 
-.resume {
-	clear: both;
+h6 {
+    font-size: 2vw;
 }
+
 
 .language {
-	margin: 0 auto;
-	margin-top: 10px;
-     width: 500px; 
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 30%;
 }
 
 .one {
-	padding: 30px;
-	display: flex;
-	background-color: rgba(255, 255, 255, 0.75);
-	text-align: right;
+    padding: 5px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .curve {
-	padding: 35px;
-	border-right: 5px solid black;
-	height: 270px;
+    padding: 35px 50px 0 0;
+    border-right: 5px solid black;
+    font-size: 4vw;
 }
 
 .projects1 {
-	font-family: 'Spectral SC', serif; 
-	margin-bottom: 50px;
-	text-align: center;
-
+    font-family: 'Spectral SC', serif;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .projects {
-	text-align: center;
-	margin: 20px;
+    text-align: center;
+    margin: 20px;
 }
 
 .resume {
-	text-align: center;
-	font-family: 'Spectral SC', serif; 
-
+    text-align: center;
+    font-family: 'Spectral SC', serif;
 }
 
 #contactSection {
-	text-align: center;
+    text-align: center;
 }
 
 
 #developer {
-	max-width:100%;
-	padding: 30px;
+    max-width: 100%;
+    padding: 30px;
 }
 
-#developer:hover {opacity: 0.7;}
+#developer:hover {
+    opacity: 0.7;
+}
 
 
 #about {
-	color: black;
+    color: black;
 }
 
-
+#number {
+    text-align: center;
+    margin: 5px;
+    background: white;
+    border: 1px solid black;
+    font-family: 'Spectral SC', serif;
+}
