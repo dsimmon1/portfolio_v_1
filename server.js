@@ -1,9 +1,10 @@
 "use strict";
 
-const nodemailer = require('nodemailer');
+const sgMail = require('@sendgrid/mail');
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require('path');
+const mongojs = require("mongojs");
 
 const app = express();
 
@@ -48,36 +49,37 @@ app.post("/contact", function(req, res) {
   `
   console.log(output);
 
-      let transporter = nodemailer.createTransport({
-        service: "Gmail",
-        auth: {
-            user: "simmons.diana93@gmail.com",
-            pass: "M!sCMBr0wn4Ever!"
-        }
-    });
 
-    // setup email data with unicode symbols
-    let mailOptions = {
-        from: '"Diana Simmons" <simmons.diana93@gmail.com>', // sender address
-        // to: 'iamariellesimonee@gmail.com',
-        to: 'simmons.diana93@gmail.com',
-        subject: 'New Contact from Website', // Subject line
-        text: 'Hello world?', // plain text body
-        html: output // html body
-    };
+  var databaseUrl = 'mongodb://dianna:password@ds013192.mlab.com:13192/boardgame';
+var collections = ["contact"];
+var db = mongojs(databaseUrl, collections);
 
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+db.on("error", function(error) {
+  console.log("Database Error:", error);
+});
 
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@blurdybloop.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    });
+db.contact.find({}, function(err, found) {
+    // Log any errors if the server encounters one
+    if (err) {
+      console.log(err);
+    }
+    // Otherwise, send the result of this query to the browser
+    else {
+      console.log(found[0].key2);
+  
+
+  sgMail.setApiKey(found[0].key2);
+const msg = {
+  to: 'simmons.diana93@gmail.com',
+  from: 'simmons.diana93@gmail.com',
+  subject: req.body.name + ' sent you a new messgae',
+  text: 'and easy to do anywhere, even with Node.js',
+  html: output
+};
+sgMail.send(msg);
+
+      }
+  });
     });
 
 app.listen(PORT, function() {
